@@ -5,7 +5,7 @@ using Entities.Concrete;
 
 namespace DataAccess.Abstract
 {
-    public interface ICategoryDal:IEntityRepository<Category>
+    public interface ICategoryDal : IEntityRepository<Category>
     {
         /*
         List<Category> GetAll();
@@ -14,6 +14,6 @@ namespace DataAccess.Abstract
         void Delete(Category category);
         List<Category> GetAllByCategory(int categoryId);
         */
-
+        Category Get(Func<object, bool> p);
     }
 }

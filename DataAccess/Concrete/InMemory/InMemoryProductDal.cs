@@ -47,7 +47,7 @@ namespace DataAccess.Concrete.InMemory
             _products.Remove(productToDelete); //eleman silinir
         }
 
-        public Product Get(Expression<Func<Product, bool>> filter)
+        public Product GetById(Expression<Func<Product, bool>> filter)
         {
             throw new NotImplementedException();
         }
